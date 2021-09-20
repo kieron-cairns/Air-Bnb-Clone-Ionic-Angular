@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>offers</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-sm="8" offset-sm="2" text-center>
+        <ion-list>
+          <ion-item *ngFor="let offer of loadedOffers.slice(1)" [routerLink]="['/', 'places' , 'tabs', 'offers', 'offer-detail']">
+          <h4>
+            {{offer.title}}
+          </h4>
+        <h6>
+          {{offer.name}}
+        </h6>
+      <p>
+        {{offer.price}}
+      </p></ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
