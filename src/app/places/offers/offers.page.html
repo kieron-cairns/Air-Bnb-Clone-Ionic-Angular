@@ -1,6 +1,10 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>offers</ion-title>
+    <ion-title>My Offers</ion-title>
+    <ion-buttons slot="primary"></ion-buttons>
+    <ion-button routerLink="/places/tabs/offers/new">
+      <ion-icon name="add" slot="icon-only"></ion-icon>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
@@ -9,15 +13,19 @@
     <ion-row>
       <ion-col size="12" size-sm="8" offset-sm="2" text-center>
         <ion-list>
-          <ion-item *ngFor="let offer of loadedOffers.slice(1)" [routerLink]="['/', 'places' , 'tabs', 'offers', 'offer-detail']">
+          <!-- <ion-item *ngFor="let offer of loadedOffers.slice(1)" [routerLink]="['/', 'places' , 'tabs', 'offers', offer.id]"> -->
+            <ion-item *ngFor="let place of loadedPlaces.slice(1)" [routerLink]="['/', 'places' , 'tabs', 'offers', place.id]">
+
           <h4>
-            {{offer.title}}
+            {{place.title}}
+            <!-- {{place.title}} -->
           </h4>
         <h6>
-          {{offer.name}}
+          {{place.description}}
+          <!-- {{place.description}} -->
         </h6>
       <p>
-        {{offer.price}}
+        <!-- {{offer.price}} -->
       </p></ion-item>
         </ion-list>
       </ion-col>

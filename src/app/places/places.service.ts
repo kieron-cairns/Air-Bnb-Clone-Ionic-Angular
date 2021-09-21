@@ -23,9 +23,18 @@ export class PlacesService {
     return [...this._places];
   }
 
-  get offers() {
-    return [...this._offers];
-  }
+  // get offers() {
+  //   return [...this._offers];
+  // }
 
   constructor() { }
+
+  getPlace(id: string) {
+    return {...this._places.find(p => p.id === id)};
+  }
+
+  // getOffer(id: string) {
+  //   return{...this._offers.find(o => o.id === id)};
+  // }
+
 }

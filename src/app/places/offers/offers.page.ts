@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Place } from '../place.model';
 import { PlacesService } from '../places.service';
 import { Offer } from './offer.model';
 @Component({
@@ -10,11 +11,13 @@ export class OffersPage implements OnInit {
 
 
   loadedOffers: Offer[];
+  loadedPlaces: Place[];
 
-  constructor(private offersService: PlacesService) { }
+  constructor(private placeService: PlacesService) { }
 
   ngOnInit() {
-    this.loadedOffers = this.offersService.offers;
+    // this.loadedOffers = this.offersService.offers;
+    this.loadedPlaces = this.placeService.places;
   }
 
 }
