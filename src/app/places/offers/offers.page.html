@@ -19,17 +19,18 @@
           <ion-item *ngFor="let offer of loadedOffers.slice(1)" [routerLink]="['/', 'places' , 'tabs', 'offers', offer.id]">
             <!-- <ion-item *ngFor="let place of loadedPlaces.slice(1)" [routerLink]="['/', 'places' , 'tabs', 'offers', place.id]"> -->
 
-          <h4>
+          <h4 style="width: 50%;">
             {{offer.title}}
             <!-- {{place.title}} -->
           </h4>
-        <h6>
+        <h6 style="padding-right: 5%;">
           <!-- {{offer.name}} -->
           {{offer.name}}
         </h6>
-      <p>
-        <!-- {{offer.price}} -->
-      </p></ion-item>
+        <h6>
+          ${{offer.price}}
+        </h6>
+    </ion-item>
         </ion-list>
       </ion-col>
     </ion-row>

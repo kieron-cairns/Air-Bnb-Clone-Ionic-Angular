@@ -14,9 +14,9 @@ export class PlacesService {
   ];
 
   private _offers: Offer[] = [
-    new Offer('o1', 'Manhattan Apartment', 'Top Cat', 199.49),
-    new Offer('o2', 'Canary Wharf Apartment', 'Daddy Big Bucks', 1000),
-    new Offer('o3', 'Sheffield Aparment', 'Northern Monkey', 45.49)
+    new Offer('o1', 'Manhattan Apartment', 'Homer Simpson', 199.49),
+    new Offer('o2', 'Canary Wharf Apartment', 'Eric Cartmen', 1000),
+    new Offer('o3', 'Sheffield Aparment', 'Peter Griffin', 45.49)
   ];
 
   get places() {
