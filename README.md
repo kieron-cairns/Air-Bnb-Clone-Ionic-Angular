@@ -2,3 +2,8 @@
 Air Bnb Clone I am developing to help with my Angular &amp; Ionic Skills
 
 ![](Screenshots/DiscoverPage.jpg)
+
+![](Screenshots/Offers.jpg)
+
+![](Screenshots/Sidenav.jpg)
+
